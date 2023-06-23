@@ -17,9 +17,9 @@ export default function Home() {
       <div className="w-auto  justify-center whitespace-nowrap">
         <h2 className=" font-bold text-lg text-center">Welcome to ***********</h2>
         <div>
-          <div className="flex justify-around mt-10 border-gray-600 border-b-2 rounded-t-l">
+          <div className="flex  mt-10 border-gray-600 border-b-2 rounded-tl">
             <button
-              className={`focus:border-b-4 rounded-t-lg border-box focus:border-blue-600 p-2 ${
+              className={`focus:border-b-4 w-1/2 rounded-t-lg border-box focus:border-blue-600 py-2 ${
                 isRegisterMode ? '' : 'bg-blue-600 text-white'
               }`}
               onClick={handleToggleMode}
@@ -27,7 +27,7 @@ export default function Home() {
               Sign In
             </button>
             <button
-              className={`focus:border-b-4 rounded-t-lg  border-box focus:border-blue-600 p-2 ${
+              className={`focus:border-b-4 w-1/2  rounded-t-lg  border-box focus:border-blue-600 py-2 ${
                 isRegisterMode ? 'bg-blue-600 text-white' : ''
               }`}
               onClick={handleToggleMode}
@@ -35,7 +35,7 @@ export default function Home() {
               Sign Up
             </button>
           </div>
-          <div className="mt-3 p-3">
+          <div className="mt-3 ">
             {isRegisterMode ? <RegisterPage /> : <Login />}
           </div>
         </div>
